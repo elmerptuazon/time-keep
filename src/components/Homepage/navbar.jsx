@@ -5,21 +5,21 @@ class NavBar extends Component {
         console.log('NavBar Rendered' + this.props); 
         return (
         <div>    
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-                <a class="navbar-brand">Top navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+                <p className="navbar-brand">Top navbar</p>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link">Home <span>(current)</span></a>
+                <div className="collapse navbar-collapse" id="navbarCollapse">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item active">
+                    <p className="nav-link">Home <span>(current)</span></p>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link">Link</a>
+                    <li className="nav-item">
+                    <p className="nav-link">Link</p>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <li className="nav-item">
+                    <p className="nav-link disabled">Disabled</p>
                     </li>
                 </ul>
                 </div>
