@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import HomePage from "../Homepage/main";
-import { BrowserRouter, Route } from "react-router-dom";
+import Profile from "../Profile/profile";
+import { BrowserRouter, Route, NavLink } from "react-router-dom";
+import "../../App.css";
 
-const LoginUI = value => {
+const LoginUI = () => {
   return (
     <div>
       <label htmlFor="inputEmail">Email address</label>
@@ -10,7 +12,6 @@ const LoginUI = value => {
         type="email"
         id="inputEmail"
         className="form-control"
-        value={value}
         placeholder="Email address"
         autoFocus
       />
@@ -22,6 +23,9 @@ const LoginUI = value => {
         className="form-control"
         placeholder="Password"
       />
+      <NavLink to="/home" className="DottedBox">
+        Login
+      </NavLink>
     </div>
   );
 };
@@ -46,7 +50,16 @@ class Login extends Component {
             exact
             strict
             render={value => {
-              return <HomePage name="Jay" />;
+              return <HomePage />;
+            }}
+          />
+
+          <Route
+            path="/profile"
+            exact
+            strict
+            render={value => {
+              return <Profile />;
             }}
           />
 

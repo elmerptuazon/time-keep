@@ -30,3 +30,25 @@
     transform: rotate(360deg);
   }
 }
+
+.DottedBox {
+  padding: auto;
+  margin: auto;
+  font-size: 50px;
+  text-align: center;
+  border: 3px dotted pink;
+}
+
+.searchfilterbox {
+  padding: 15px;
+  font-size: 20px;
+  position: relative;
+  border: 3px dotted pink;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
