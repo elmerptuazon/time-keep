@@ -19,6 +19,13 @@ class SearchFilter extends Component {
           placeholder="sort"
           autoFocus
         />
+
+        <input
+          type="file"
+          data-input-file-preview="image-preview"
+          data-map-to-model="image.file"
+        />
+        <canvas id="image-preview" />
       </div>
     );
   }
