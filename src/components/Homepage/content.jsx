@@ -9,8 +9,8 @@ class Content extends Component {
 
   render() {
     return (
-      <div>
-        <div className="contentcss">
+      <div className="container">
+        <div className="col">
           <img src={this.state.images} alt="sampleimage" />
           <figcaption>
             P<span>150.00</span>

@@ -6,7 +6,7 @@ import "../../App.css";
 
 const LoginUI = () => {
   return (
-    <div>
+    <div className="container">
       <label htmlFor="inputEmail">Email address</label>
       <input
         type="email"
@@ -23,7 +23,7 @@ const LoginUI = () => {
         className="form-control"
         placeholder="Password"
       />
-      <NavLink to="/home" className="DottedBox">
+      <NavLink to="/home" className="btn btn-primary btn-lg">
         Login
       </NavLink>
     </div>

@@ -26,7 +26,9 @@ class NavBar extends Component {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <p className="nav-link">Home</p>
+                <NavLink to="/home">
+                  <p className="nav-link">Home</p>
+                </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/profile">
@@ -35,7 +37,7 @@ class NavBar extends Component {
               </li>
               <li className="nav-item">
                 <NavLink to="/">
-                  <p className="nav-link">Back</p>
+                  <p className="nav-link">Logout</p>
                 </NavLink>
               </li>
             </ul>
